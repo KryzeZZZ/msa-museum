@@ -12,6 +12,27 @@
     position: relative; /* 确保容器定位正确 */
     background-color: rgba(0, 0, 0, 0); /* 整体容器背景半透明效果 */
 }
+.top-left-button,
+.top-right-button {
+  position: absolute;
+  top: 20px; /* 调整按钮垂直距离 */
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+}
+
+.top-left-button {
+  left: 20px; /* 左上角 */
+}
+
+.top-right-button {
+  right: 20px; /* 右上角 */
+}
 .swiper {
     width: 100%;
     justify-content: center;
@@ -24,7 +45,7 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    width: 100vh;
+    width: 80%;
     height: 100vh;
     left: 13%;
     z-index: 1;
@@ -36,6 +57,13 @@
     box-sizing: content-box;
 }
 
+.swiper-slide.swiper-slide-invisible {
+    visibility: hidden;
+}
+
+.swiper-slide.swiper-slide-visible {
+    visibility: visible;
+  }
 /* 每个 swiper-slide 项目 */
 .swiper-slide {
     display: flex;
@@ -58,8 +86,8 @@
 
 /* 鼠标悬停时的放大效果（百分比放大），但不影响边框间距 */
 .swiper-slide:hover {
-    transform: scale(1.25); /* 仅放大内容 */
-    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.8); /* 增强阴影效果 */
+    transform: scale(1.25);
+    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.8); 
 }
 
 /* 隐藏分页器 */

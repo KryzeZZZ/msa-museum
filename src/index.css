@@ -6,7 +6,7 @@
   line-height: 1.5;
   font-weight: 400;
   overflow: hidden;
-  background-image: url('/bg.svg  '); /* 背景图路径 */
+  background-image: url('/bg.svg');
   background-size: cover; /* 背景图覆盖容器，自动调整大小 */
   background-repeat: no-repeat; /* 背景图不重复 */
   
